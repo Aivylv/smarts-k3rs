@@ -25,8 +25,7 @@ class InspeksiForm extends Component
     public $signage = true;
     
     public $catatan = '';
-    public $rekomendasi = '';
-    
+    public $rekomendasi = ''; 
     public $aparList = [];
     public $selectedApar = null;
 
