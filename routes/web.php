@@ -7,6 +7,7 @@ use App\Livewire\Apar\AparForm;
 use App\Livewire\Apar\AparShow;
 use App\Livewire\Inspeksi\InspeksiIndex;
 use App\Livewire\Inspeksi\InspeksiForm;
+use App\Livewire\Inspeksi\InspeksiShow;
 use App\Livewire\Lokasi\LokasiIndex;
 use App\Livewire\Vendor\VendorIndex;
 use App\Livewire\Maintenance\MaintenanceIndex;
@@ -54,9 +55,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/inspeksi', InspeksiIndex::class)->name('inspeksi.index');
     Route::get('/inspeksi/create', InspeksiForm::class)->name('inspeksi.create');
     Route::get('/inspeksi/create/{apar}', InspeksiForm::class)->name('inspeksi.create.apar');
-    Route::get('/inspeksi/{id}', function ($id) {
-        return view('inspeksi.show', ['id' => $id]);
-    })->name('inspeksi.show');
+    Route::get('/inspeksi/{id}', InspeksiShow::class)->name('inspeksi.show');
 
     // Lokasi
     Route::get('/lokasi', LokasiIndex::class)->name('lokasi.index');
