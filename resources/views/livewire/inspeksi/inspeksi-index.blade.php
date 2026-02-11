@@ -94,7 +94,7 @@
                             <td>{{ $inspeksi->apar->lokasi->nama_lokasi ?? '-' }}</td>
                             <td>{{ $inspeksi->tanggal_inspeksi->format('d/m/Y') }}</td>
                             <td>{{ $inspeksi->user->name }}</td>
-                            <td>
+                            <td class="text-center">
                                 <span class="pressure-indicator pressure-{{ $inspeksi->pressure_status }}"></span>
                             </td>
                             <td>
