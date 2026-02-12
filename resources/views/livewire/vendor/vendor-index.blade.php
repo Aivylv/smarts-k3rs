@@ -44,7 +44,7 @@
                             <td>{{ $vendor->contact_person }}</td>
                             <td>{{ $vendor->phone }}</td>
                             <td>{{ $vendor->email ?? '-' }}</td>
-                            <td>{{ $vendor->apar_count }}</td>
+                            <td class="text-center">{{ $vendor->apar_count }}</td>
                             <td>
                                 <span class="badge {{ $vendor->is_active ? 'badge-success' : 'badge-ghost' }} badge-sm">
                                     {{ $vendor->is_active ? 'Aktif' : 'Nonaktif' }}

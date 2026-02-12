@@ -45,7 +45,7 @@
                         <tr class="hover">
                             <td class="font-medium">{{ $lokasi->nama_lokasi }}</td>
                             <td>{{ $lokasi->gedung }}</td>
-                            <td>{{ $lokasi->lantai }}</td>
+                            <td class="text-center">{{ $lokasi->lantai }}</td>
                             <td>{{ $lokasi->ruangan }}</td>
                             <td>
                                 <span @class([
@@ -57,7 +57,7 @@
                                     {{ ucfirst($lokasi->kategori_risiko) }}
                                 </span>
                             </td>
-                            <td>{{ $lokasi->apar_count }}</td>
+                            <td class="text-center">{{ $lokasi->apar_count }}</td>
                             <td>
                                 <button wire:click="openModal({{ $lokasi->id_lokasi }})" class="btn btn-ghost btn-sm btn-square">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
