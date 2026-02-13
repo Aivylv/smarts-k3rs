@@ -13,7 +13,7 @@
                         [text-shadow:0_0_0.5px_rgba(0,0,0,0.4),0_2px_6px_rgba(0,0,0,0.35)]">
                 SMART K3
             </h1>
-            <p class="text-base-content/70 mt-2 drop-shadow-sm">
+            <p class="text-base-content/100 mt-2 drop-shadow-sm [text-shadow:0_0_0.5px_rgba(0,0,0,0.4)]">
                 Sistem Manajemen APAR Terintegrasi
             </p>
         </div>
